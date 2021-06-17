@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Icon, Label, Menu, Table } from 'semantic-ui-react'
-import JobPositionService from '../services/JobPositionService';
+import JobPositionService from '../services/jobPositionService';
 
 
 export default function JobPositionList() {
@@ -29,7 +29,7 @@ export default function JobPositionList() {
           ))}
         </Table.Body>
 
-        <Table.Footer>
+        {/* <Table.Footer>
           <Table.Row>
             <Table.HeaderCell colSpan="3">
               <Menu floated="right" pagination>
@@ -46,7 +46,7 @@ export default function JobPositionList() {
               </Menu>
             </Table.HeaderCell>
           </Table.Row>
-        </Table.Footer>
+        </Table.Footer> */}
       </Table>
     </div>
     )
