@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import {Link} from 'react-router-dom'
 import { Icon, Label, Menu, Table } from 'semantic-ui-react'
 import JobAdvertisementService from '../services/jobAdvertisementService';
 
@@ -37,12 +38,13 @@ export default function JobAdvertisementList() {
               <Table.Cell>{jobAdvertisement.maxSalary}</Table.Cell>
               <Table.Cell>{jobAdvertisement.numberOfOpenPositions}</Table.Cell>
               <Table.Cell>{jobAdvertisement.createdAt}</Table.Cell>
-              <Table.Cell>{jobAdvertisement.applicationDeadline}</Table.Cell>
+              <Table.Cell><Link to={`/advertisements/${jobAdvertisement.applicationDeadline}`}>{jobAdvertisement.applicationDeadline}</Link></Table.Cell>
               <Table.Cell>{jobAdvertisement.employer.companyName}</Table.Cell>
               <Table.Cell>{jobAdvertisement.city.cityName}</Table.Cell>
             </Table.Row>
           ))}
         </Table.Body>
+
 
         { <Table.Footer>
           <Table.Row>
