@@ -7,6 +7,7 @@ import { Route } from 'react-router-dom'
 import AdvertisementDetail from '../pages/AdvertisementDetail'
 import ApplicationDetail from '../pages/ApplicationDetail'
 import Login from '../pages/Login'
+import Register from '../pages/Register'
 
 export default function Dashboard() {
     return (
@@ -23,6 +24,7 @@ export default function Dashboard() {
                         <Route path="/advertisements/:applicationDeadline" component={AdvertisementDetail}/>
                         <Route path="/applications" component={ApplicationDetail}/>
                         <Route exact path="/login" component={Login}/>
+                        <Route exact path="/register" component={Register}/>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>

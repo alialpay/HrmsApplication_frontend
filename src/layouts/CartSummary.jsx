@@ -5,7 +5,7 @@ import { Dropdown } from 'semantic-ui-react'
 export default function CartSummary() {
     return (
         <div>
-            <Dropdown item text='Başvurularınız'>
+            <Dropdown item text='Başvurularım'>
                 <Dropdown.Menu>
                 <Dropdown.Item as={NavLink} to="/applications">Listele</Dropdown.Item>
                 <Dropdown.Item as={NavLink} to="/applications">Listele</Dropdown.Item>
