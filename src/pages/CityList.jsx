@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Icon, Label, Menu, Table } from 'semantic-ui-react'
 import CityService from '../services/cityService';
+import { Dropdown } from 'semantic-ui-react';
 
 export default function CityList() {
 
@@ -28,6 +29,23 @@ export default function CityList() {
           ))}
         </Table.Body>
       </Table>
+
+      {/* dropdown */}
+
+
+      <Dropdown item text='Şehirler'>
+                <Dropdown.Menu >
+                    {
+                        cities.map((city) => (
+                            <Dropdown.Item key={city.id}>
+                                {city.cityName}
+                            </Dropdown.Item>
+                        ))
+                    }
+                    <Dropdown.Divider />
+                    <Dropdown.Item >Listele</Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
         </div>
     )
 }

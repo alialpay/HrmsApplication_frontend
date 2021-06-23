@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
-import { Icon, Label, Menu, Table } from 'semantic-ui-react'
+import { Button, Icon, Label, Menu, Table } from 'semantic-ui-react'
 import JobAdvertisementService from '../services/jobAdvertisementService';
+import { useDispatch } from 'react-redux';
+import {addToCart} from "../store/actions/cartActions"
+import { toast } from 'react-toastify';
 
 export default function JobAdvertisementList() {
+
+  const dispatch = useDispatch()
 
   const [jobAdvertisements, setJobAdvertisements] = useState([])
 
@@ -11,6 +16,11 @@ export default function JobAdvertisementList() {
     let jobAdvertisementService = new JobAdvertisementService()
     jobAdvertisementService.getJobAdvertisements().then(result=>setJobAdvertisements(result.data.data))
 }, [])
+
+  const handleAddToCart=(jobAdvertisement)=>{
+    dispatch(addToCart(jobAdvertisement))
+    toast.success(`${jobAdvertisement.employer.companyName} tarafına başvurunuz iletildi.`)
+  }
 
   return (
     <div>
@@ -26,6 +36,8 @@ export default function JobAdvertisementList() {
             <Table.HeaderCell>Son_Başvuru</Table.HeaderCell>
             <Table.HeaderCell>İşveren_Kurum</Table.HeaderCell>
             <Table.HeaderCell>Şehir</Table.HeaderCell>
+            <Table.HeaderCell>Detay</Table.HeaderCell> 
+            <Table.HeaderCell></Table.HeaderCell>  
           </Table.Row>
         </Table.Header>
 
@@ -38,9 +50,21 @@ export default function JobAdvertisementList() {
               <Table.Cell>{jobAdvertisement.maxSalary}</Table.Cell>
               <Table.Cell>{jobAdvertisement.numberOfOpenPositions}</Table.Cell>
               <Table.Cell>{jobAdvertisement.createdAt}</Table.Cell>
-              <Table.Cell><Link to={`/advertisements/${jobAdvertisement.applicationDeadline}`}>{jobAdvertisement.applicationDeadline}</Link></Table.Cell>
+              <Table.Cell>
+                <Link to={`/advertisements/${jobAdvertisement.applicationDeadline}`}>
+                  {jobAdvertisement.applicationDeadline}
+                </Link>
+              </Table.Cell>
               <Table.Cell>{jobAdvertisement.employer.companyName}</Table.Cell>
               <Table.Cell>{jobAdvertisement.city.cityName}</Table.Cell>
+              <Table.Cell>
+               <Button inverted color='teal'>
+                 <Link to={`/advertisements/${jobAdvertisement.applicationDeadline}`}>İncele</Link>
+               </Button> 
+              </Table.Cell>
+              <Table.Cell>
+                <Button inverted color='blue' onClick={()=>handleAddToCart(jobAdvertisement)}>Başvur</Button>
+              </Table.Cell>
             </Table.Row>
           ))}
         </Table.Body>
