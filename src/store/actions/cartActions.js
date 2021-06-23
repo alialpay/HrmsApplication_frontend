@@ -8,7 +8,7 @@ export function addToCart(jobAdvertisement){
     }
 }
 
-export function RemoveFromCart(jobAdvertisement){
+export function removeFromCart(jobAdvertisement){
     return{
         type : REMOVE_FROM_CART,
         payload : jobAdvertisement
