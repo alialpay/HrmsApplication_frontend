@@ -9,6 +9,7 @@ import ApplicationDetail from '../pages/ApplicationDetail'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
 import { ToastContainer } from 'react-toastify'
+import JobAdvertisementAdd from '../pages/JobAdvertisementAdd'
 
 export default function Dashboard() {
     return (
@@ -27,6 +28,7 @@ export default function Dashboard() {
                         <Route path="/applications" component={ApplicationDetail}/>
                         <Route exact path="/login" component={Login}/>
                         <Route exact path="/register" component={Register}/>
+                        <Route path="/jobAdvertisement/add" component={JobAdvertisementAdd} />
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
