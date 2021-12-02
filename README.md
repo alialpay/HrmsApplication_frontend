@@ -1,7 +1,7 @@
 # HRMSApplication
 Human Resource Management System
 
-![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/Untitled%20Diagram.png)
+![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/Untitled%20Diagram.png)
 
 # Getting Started with Create React App
 
