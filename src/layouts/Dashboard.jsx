@@ -26,7 +26,7 @@ export default function Dashboard() {
                         <Route exact path="/advertisements" component={JobAdvertisementList}/>
                         <Route path="/advertisements/:applicationDeadline" component={AdvertisementDetail}/>
                         <Route path="/applications" component={ApplicationDetail}/>
-                        <Route exact path="/logine" component={Login}/>
+                        <Route exact path="/login" component={Login}/>
                         <Route exact path="/register" component={Register}/>
                         <Route path="/jobAdvertisement/add" component={JobAdvertisementAdd} />
                     </Grid.Column>
