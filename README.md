@@ -1,3 +1,8 @@
+# HRMSApplication
+Human Resource Management System
+
+![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/Untitled%20Diagram.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
