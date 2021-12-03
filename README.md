@@ -1,9 +1,14 @@
 # HRMSApplication
-## Human Resource Management System
+Human Resource Management System
 
-UML Component Diagram
+## UML Component Diagram
 
 ![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/Untitled%20Diagram.png)
+
+## Anasayfa
+
+
+
 
 
 
