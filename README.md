@@ -7,6 +7,9 @@ Human Resource Management System
 
 ## Anasayfa
 
+![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/1.png)
+
+
 
 
 
