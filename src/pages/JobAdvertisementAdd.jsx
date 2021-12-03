@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import { FormField, Button, Label, Dropdown, Select } from 'semantic-ui-react';
 import KodlamaIoTextInput from '../utilities/customFormControls/KodlamaIoTextInput';
 import CityService from '../services/cityService';
+import { toast } from 'react-toastify';
 
 
 
@@ -28,6 +29,11 @@ export default function JobAdvertisementAdd() {
         })
         ))
     }, [])
+
+    const addAdvertisement=()=>{
+        toast.success(`İlan kaydınız iletildi.`)
+      }
+    
 
     const schema = Yup.object({
         title: Yup.string().required("Pozisyon adı zorunlu"),
@@ -80,8 +86,8 @@ export default function JobAdvertisementAdd() {
                         <Select placeholder='Çalışma Zamanı Seçiniz' options={workingType} />
                     </FormField>
 
-
-                    <Button color="green" type="submit">Ekle</Button>
+                    <Button inverted color='blue' onClick={()=>addAdvertisement()}>Ekle</Button>
+                    {/* <Button color="green" type="submit">Ekle</Button> */}
                 </Form>
             </Formik>
 
