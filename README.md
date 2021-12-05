@@ -5,12 +5,48 @@ Human Resource Management System
 
 ![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/Untitled%20Diagram.png)
 
+## Açıklama
+
+Sistemimiz üç temel kullanıcı türüne sahiptir. Sistem personeli, İş Arayanlar ve İş verenler. Sistem personeli : Projenizde çalışan kişiler. Örneğin Kariyer.Net personeli.
+
+!ilgili kontroller projemizin backend tarafında yapılmıştır:
+    https://github.com/alialpay/HRMSApplication
+
 ## Anasayfa
 
 ![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/1.png)
 
+## Req 1 : İş Arayanlar sisteme kayıt olabilmelidir. 
+![link](https://github.com/alialpay/HRMSApplication/blob/master/hrms/src/main/java/kodlamaio/hrms/business/concretes/JobSeekerManager.java)
+Kabul Kriterleri:
+
+Kayıt sırasında kullanıcıdan ad, soyad, tcno, doğum yılı, e-Posta, şifre, şifre tekrarı bilgileri istenir.
+Tüm alanlar zorunludur. Kullanıcı bilgilendirilir.
+Mernis doğrulaması yapılarak sisteme kayıt gerçekleştirilir.
+Doğrulama geçerli değilse kullanıcı bilgilendirilir.
+Daha önce kayıtlı bir e-posta veya tcno var ise kayıt gerçekleşmez. Kullanıcı bilgilendirilir.
+Kayıdın gerçekleşmesi için e-posta doğrulaması gerekir.
+
 ![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/2girisYap.png)
 
+## Req 2 : İş verenler sisteme kayıt olabilmelidir.
+
+Kabul Kriterleri:
+
+Kayıt sırasında kullanıcıdan şirket adı, web sitesi, web sitesi ile aynı domaine sahip e-posta, telefon, şifre, şifre tekrarı bilgileri istenir. Burada amaç sisteme şirket olmayanların katılmasını engellemektir.
+Tüm alanlar zorunludur. Kullanıcı bilgilendirilir.
+Şirket kayıtları iki şekilde doğrulanır. Kayıdın gerçekleşmesi için e-posta doğrulaması gerekir. HRMS personelinin (bizim :)) onayı gerekmektedir.
+Daha önce kayıtlı bir e-posta var ise kayıt gerçekleşmez. Kullanıcı bilgilendirilir.
+
+## Req 3 : Sisteme genel iş pozisyonu isimleri eklenebilmelidir. Örneğin Software Developer, Software Architect.
+
+Kabul Kriterleri:
+
+Bu pozisyonlar tekrar edemez. Kullanıcı uyarılır.
+
+## Giriş Ekranı
+
+![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/3girisYapEkran.png)
 
 
 
