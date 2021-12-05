@@ -9,6 +9,7 @@ Human Resource Management System
 
 ![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/1.png)
 
+![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/2girisYap.png)
 
 
 
