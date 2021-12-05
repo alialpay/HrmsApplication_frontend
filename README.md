@@ -28,8 +28,6 @@ Doğrulama geçerli değilse kullanıcı bilgilendirilir.
 Daha önce kayıtlı bir e-posta veya tcno var ise kayıt gerçekleşmez. Kullanıcı bilgilendirilir.
 Kayıdın gerçekleşmesi için e-posta doğrulaması gerekir.
 
-![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/2girisYap.png)
-
 ## Req 2 : İş verenler sisteme kayıt olabilmelidir.
 
 Kabul Kriterleri:
@@ -45,9 +43,14 @@ Kabul Kriterleri:
 
 Bu pozisyonlar tekrar edemez. Kullanıcı uyarılır.
 
-## Giriş Ekranı
+
+![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/2girisYap.png)
+
+## Giriş Ekranı : Bilgiler doğru ise sisteme giriş yapılır
 
 ![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/3girisYapEkran.png)
+
+# Giriş yapıldığında kullanıcının profil resmi gözükmelidir.
 
 
 
