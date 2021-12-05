@@ -17,7 +17,7 @@ Sistemimiz üç temel kullanıcı türüne sahiptir. Sistem personeli, İş Aray
 ![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/1.png)
 
 ## Req 1 : İş Arayanlar sisteme kayıt olabilmelidir. 
-![link](https://github.com/alialpay/HRMSApplication/blob/master/hrms/src/main/java/kodlamaio/hrms/business/concretes/JobSeekerManager.java)
+[JobSeekerManager](https://github.com/alialpay/HRMSApplication/blob/master/hrms/src/main/java/kodlamaio/hrms/business/concretes/JobSeekerManager.java)
 Kabul Kriterleri:
 
 Kayıt sırasında kullanıcıdan ad, soyad, tcno, doğum yılı, e-Posta, şifre, şifre tekrarı bilgileri istenir.
