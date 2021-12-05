@@ -9,14 +9,35 @@ Human Resource Management System
 
 Sistemimiz üç temel kullanıcı türüne sahiptir. Sistem personeli, İş Arayanlar ve İş verenler. Sistem personeli : Projenizde çalışan kişiler. Örneğin Kariyer.Net personeli.
 
-!ilgili kontroller projemizin backend tarafında yapılmıştır:
-    https://github.com/alialpay/HRMSApplication
+#[Backend](https://github.com/alialpay/HRMSApplication)
+
+# Veritabanı için PostgreSql kullanıldı
+
+![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/pgAdmin.png)
 
 ## Anasayfa
 
 ![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/1.png)
 
-## Req 1 : İş Arayanlar sisteme kayıt olabilmelidir. 
+## İş verenler sisteme yeni ilan ekleyebilmelidir
+
+Req : İş verenler, iş ilanı paylaşırken işin yerinde veya uzaktan çalışma türlerinden hangisine uygun olduğunu seçilir kutudan girebilmelidir.
+
+Req : İş verenler işin çalışma zamanı özelliğini seçilir kutudan girebilmelidir. (Örneğin : Yarı Zamanlı, tam zamanlı...)
+
+Req : İş verenler tarafından girilen iş ilanları Hrms personeli tarafından onaylandığında yayına geçmelidir.
+
+Req : Formik kullanarak form tasarımlarınızı oluşturabilirsiniz https://formik.org/
+
+![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/ilanEkleme.png)
+
+# Hatalı ilan
+
+Req : Toast servisimiz kullanıcıyı anlık olarak uyarmalıdır
+
+![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/hataliIlanEkleme.png)
+
+## İş Arayanlar sisteme kayıt olabilmelidir. 
 ilgili kontroller için [tıklayınız](https://github.com/alialpay/HRMSApplication/blob/master/hrms/src/main/java/kodlamaio/hrms/business/concretes/JobSeekerManager.java)
 
 Kabul Kriterleri:
@@ -28,16 +49,17 @@ Doğrulama geçerli değilse kullanıcı bilgilendirilir.
 Daha önce kayıtlı bir e-posta veya tcno var ise kayıt gerçekleşmez. Kullanıcı bilgilendirilir.
 Kayıdın gerçekleşmesi için e-posta doğrulaması gerekir.
 
-## Req 2 : İş verenler sisteme kayıt olabilmelidir.
+## İş verenler sisteme kayıt olabilmelidir.
 
 Kabul Kriterleri:
 
-Kayıt sırasında kullanıcıdan şirket adı, web sitesi, web sitesi ile aynı domaine sahip e-posta, telefon, şifre, şifre tekrarı bilgileri istenir. Burada amaç sisteme şirket olmayanların katılmasını engellemektir.
+Kayıt sırasında kullanıcıdan şirket adı, web sitesi, web sitesi ile aynı domaine sahip e-posta, telefon, şifre, şifre tekrarı bilgileri istenir.
+Burada amaç sisteme şirket olmayanların katılmasını engellemektir.
 Tüm alanlar zorunludur. Kullanıcı bilgilendirilir.
 Şirket kayıtları iki şekilde doğrulanır. Kayıdın gerçekleşmesi için e-posta doğrulaması gerekir. HRMS personelinin (bizim :)) onayı gerekmektedir.
 Daha önce kayıtlı bir e-posta var ise kayıt gerçekleşmez. Kullanıcı bilgilendirilir.
 
-## Req 3 : Sisteme genel iş pozisyonu isimleri eklenebilmelidir. Örneğin Software Developer, Software Architect.
+## Sisteme genel iş pozisyonu isimleri eklenebilmelidir. Örneğin Software Developer, Software Architect.
 
 Kabul Kriterleri:
 
@@ -46,11 +68,41 @@ Bu pozisyonlar tekrar edemez. Kullanıcı uyarılır.
 
 ![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/2girisYap.png)
 
-## Giriş Ekranı : Bilgiler doğru ise sisteme giriş yapılır
+## Giriş Ekranı
+
+Bilgiler doğru ise sisteme giriş yapılır
 
 ![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/3girisYapEkran.png)
 
-# Giriş yapıldığında kullanıcının profil resmi gözükmelidir.
+# Giriş yapıldığında kullanıcının profil resmi gözükür.
+
+![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/4girisYapildi.png)
+
+
+![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/5yeniGoruntuPPveSehirler.png)
+
+## İlanı incelemek
+
+
+![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/6incele.png)
+
+# Detay Sayfası
+
+![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/7detaySayfasi.png)
+
+## İlana Başvur
+
+![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/8basvur.png)
+
+Toast servisimiz kullanıcıyı bilgilendirir
+
+![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/9basvuruYapildi.png)
+
+# Başvurularım kısmındaki anlık değişim
+
+![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/10basvurularim.png)
+
+![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/11basvurularim2.png)
 
 
 
