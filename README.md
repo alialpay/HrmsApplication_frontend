@@ -33,7 +33,7 @@ Req : Formik kullanarak form tasarımlarınızı oluşturabilirsiniz https://for
 
 # Hatalı ilan
 
-Req : Toast servisimiz kullanıcıyı anlık olarak uyarmalıdır
+Req : Toast servisimiz kullanıcıyı anlık olarak uyarmalıdır.
 
 ![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/hataliIlanEkleme.png)
 
