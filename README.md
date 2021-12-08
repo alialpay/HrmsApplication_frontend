@@ -11,7 +11,7 @@ Sistemimiz üç temel kullanıcı türüne sahiptir. Sistem personeli, İş Aray
 
 #[Backend](https://github.com/alialpay/HRMSApplication)
 
-# Veritabanı için PostgreSql kullanıldı
+## Veritabanı için PostgreSql kullanıldı
 
 ![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/pgAdmin.png)
 
@@ -31,7 +31,7 @@ Req : Formik kullanarak form tasarımlarınızı oluşturabilirsiniz https://for
 
 ![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/ilanEkleme.png)
 
-# Hatalı ilan
+## Hatalı ilan
 
 Req : Toast servisimiz kullanıcıyı anlık olarak uyarmalıdır.
 
@@ -74,7 +74,7 @@ Bilgiler doğru ise sisteme giriş yapılır
 
 ![GitHub](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/3girisYapEkran.png)
 
-# Giriş yapıldığında kullanıcının profil resmi gözükür.
+## Giriş yapıldığında kullanıcının profil resmi gözükür.
 
 ![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/4girisYapildi.png)
 
@@ -86,7 +86,7 @@ Bilgiler doğru ise sisteme giriş yapılır
 
 ![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/6incele.png)
 
-# Detay Sayfası
+## Detay Sayfası
 
 ![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/7detaySayfasi.png)
 
@@ -98,7 +98,7 @@ Toast servisimiz kullanıcıyı bilgilendirir
 
 ![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/9basvuruYapildi.png)
 
-# Başvurularım kısmındaki anlık değişim
+## Başvurularım kısmındaki anlık değişim
 
 ![Github](https://github.com/alialpay/HrmsApplication_frontend/blob/master/images/10basvurularim.png)
 
